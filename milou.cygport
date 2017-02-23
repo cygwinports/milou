@@ -1,0 +1,8 @@
+inherit kf5
+
+NAME="milou"
+VERSION=5.8.5
+RELEASE=1
+CATEGORY="KDE"
+SUMMARY="KDE Plasma search and launch applet"
+DESCRIPTION="Dedicated search component built on top of Baloo"
