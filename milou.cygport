@@ -1,8 +1,10 @@
 inherit kf5
 
 NAME="milou"
-VERSION=5.8.5
+VERSION=5.8.8
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE Plasma search and launch applet"
 DESCRIPTION="Dedicated search component built on top of Baloo"
+
+PATCH_URI="5.8-qt59.patch"

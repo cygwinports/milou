@@ -1,0 +1,14 @@
+commit 6d9045fea894960b02232bb2ca0a5d63c475d80d
+
+--- a/lib/test/modeltest.cpp
++++ b/lib/test/modeltest.cpp
+@@ -451,7 +451,7 @@ void ModelTest::data()
+     // Check that the alignment is one we know about
+     QVariant textAlignmentVariant = model->data ( model->index ( 0, 0 ), Qt::TextAlignmentRole );
+     if ( textAlignmentVariant.isValid() ) {
+-        int alignment = textAlignmentVariant.toInt();
++        const auto alignment = textAlignmentVariant.toUInt();
+         QCOMPARE( alignment, ( alignment & ( Qt::AlignHorizontal_Mask | Qt::AlignVertical_Mask ) ) );
+     }
+ 
+
